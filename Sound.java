@@ -137,6 +137,18 @@ public class Sound {
         refresh();
 
     }
+    public void swap(int index1, int index2){
+        int i = myData.get(index1);
+        myData.set(index1, myData.get(index2) );
+        myData.set(index2, i);
+
+	
+    }
+    public void reverse(){
+        
+    }
+
+
     public void setToIndex() {
         for(int i =0; i < 32768; i++) {
             myData.set(i, i);
