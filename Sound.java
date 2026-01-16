@@ -145,7 +145,11 @@ public class Sound {
 	
     }
     public void reverse(){
-        
+        for(int i=0; i<myData.size(); i++){
+            swap(i, myData.size()-1-i);
+        }
+        refresh();
+
     }
 
 
